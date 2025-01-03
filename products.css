@@ -1,0 +1,136 @@
+body {
+    background-color: #bdbdbb;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 300px;
+}
+
+
+img {
+    margin-left: 50px;
+    margin-top: 0px;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+p {
+    text-align: center;
+}
+
+
+
+
+.btn {
+    float: right;
+    background: transparent;
+    border: transparent;
+    margin-top: -500px;
+    font-size: 30px;
+}
+
+
+
+
+.btn1 {
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+
+
+
+.btn1 {background-color: #749e5f;}
+.btn1:hover {background: #ddd;}
+
+
+
+
+.btn2 {
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+.btn2 {background-color: #749e5f;}
+.btn2:hover {background: #ddd;}
+
+
+
+
+.btn3 {
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+
+.btn3 {background-color: #749e5f;}
+.btn3:hover {background: #ddd;}
+
+
+
+.btn4 {
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+
+.btn4 {background-color: #749e5f;}
+.btn4:hover {background: #ddd;}
+
+
+.button-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.btn5 {
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 14px 28px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.btn5 {background-color: #ccb08e;}
+.btn5:hover {background: #ddd;}
+
+
+.button-container1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-style: oblique;
+    color: #333;
+}
+
+
+
