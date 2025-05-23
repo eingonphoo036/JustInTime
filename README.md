@@ -1,65 +1,63 @@
-# JustInTime
-SoftwareEngineeringGroupProject
-JustInTime is a collaborative web application developed as part of a project at Coventry University. The project demonstrates the Software Engineering Lifecycle (SELC) through a hands-on approach, highlighting key phases such as requirements analysis, design, implementation, testing, and deployment. The development process emphasized agile methodologies and teamwork, with roles rotating weekly among team members to provide comprehensive exposure to different responsibilities.
+# JustInTime — FloatFry Manufacturing Web System
 
-Technologies Used
-Frontend:
-HTML5
-CSS3
-JavaScript
-Backend:
-PHP for server-side scripting
-Database:
-MySQL
-Version Control:
-Git
-Development Tools:
-Visual Studio Code
-XAMPP/WAMP for local server setup
-Setup and Installation
-Clone the Repository:
-For XAMPP: Move the justintime folder to C:/xampp/htdocs/
-For WAMP: Move the justintime folder to C:/wamp/www/
-Import the Database:
+## Overview
+**JustInTime** is a second-year group software engineering project developed to assist employees of the FloatFry company in managing manufacturing tasks more efficiently. This web-based solution supports operations such as timetable scheduling, material tracking, machine monitoring, and product lifecycle management through a unified platform.
 
-Open phpMyAdmin (e.g., http://localhost/phpmyadmin/).
-Create a new database named justintime.
-Import the database.sql file located in the db/ directory.
-Configure Database Connection:
+The application was built using **PHP, HTML, and CSS**, with a MySQL database, to simulate a real-world Manufacturing Resource Planning (MRP) system.
 
-Open the PHP files (product.php, stamptimeshow.php, timetableinput.php, WeeklyOrder.php) and update the database credentials if necessary:
-php
-Copy code
-$servername = "localhost";  
-$username = "root";  
-$password = "";  
-$dbname = "justintime";  
-Start the Local Server:
+## Technologies Used
+- **Frontend:** HTML, CSS
+- **Backend:** PHP
+- **Database:** MySQL (via phpMyAdmin)
+- **Design & Planning Tools:** Figma, Excel, XAMPP
 
-Launch XAMPP/WAMP and start the Apache and MySQL modules.
-Access the Project:
+## Key Features
 
-Open your browser and navigate to http://localhost/justintime/.
-Team Contributions
-This project was developed collaboratively by a team of students at Coventry University. Each team member took on rotating roles weekly to gain hands-on experience in various aspects of the Software Engineering Lifecycle. The roles included:
+### 🔐 User Authentication
+- Role-based login system for various staff types (e.g., Stamper, Floor Manager, PO, Production Manager).
+- Username and password verification with job-based homepage redirection.
 
-Product Owner: Responsible for defining the vision and priorities for the project.
-Scrum Master: Facilitated team collaboration and ensured adherence to agile practices.
-System Architect: Designed and implemented the system's overall structure and functionality.
-Web Developer: Focused on front-end and user experience development.
-Database Engineer: Designed and maintained the project's database schema and queries.
-This dynamic rotation allowed all team members to develop a comprehensive understanding of software development practices and fostered a collaborative environment.
+### 🛠️ Operational Pages
+- **Timetable Management:** Assign and track shift schedules.
+- **Machine Monitoring:** Check availability and details for machine types.
+- **Material Management:** Search, update, and place orders for materials.
+- **Product Line Control:** Add, edit, and view production line specs.
+- **Weekly Order Management:** Enter and manage demand forecasts and shipping schedules.
 
-Future Enhancements
-User Authentication: Implement secure user login and registration systems.
-Enhanced UI/UX: Improve the interface with more responsive and interactive designs.
-Real-Time Notifications: Add features for real-time updates and notifications.
-Advanced Reporting: Develop detailed analytics and reporting tools for better insights.
-Mobile Optimization: Further optimize the website for mobile devices.
+### 🗃️ Database Features
+- Normalized relational schema including tables for staff, products, machines, materials, certifications, shifts, and timetables.
+- Full database structure implemented and integrated using phpMyAdmin.
 
-License
-This project is licensed under the MIT License.
+## Setup Instructions
 
-Acknowledgements
-Special thanks to Coventry University for providing the framework and guidance for this project.
-Appreciation to all team members for their dedication and teamwork in making this project a success.
+### Requirements
+- Local server environment (XAMPP or similar)
+- PHP and MySQL support
+
+### Installation
+1. Clone or copy project files into `htdocs` directory.
+2. Import the provided SQL file (`floatfry.sql`) into phpMyAdmin.
+3. Update database credentials in `db_conn.php` and `db_conn1.php`.
+4. Start Apache and MySQL via XAMPP.
+5. Access the website at `http://localhost/index.php`.
+
+## Team Members
+- Ei Ngon Phoo (Database Engineer / Full Stack Developer)
+- Joelle Ibrahim (System Architect / Full Stack Developer)
+- Karina Kaur Panesar (Product Owner / Web Developer)
+- Sevval Isikirik (Scrum Master / Web Developer)
+- Yoon Myat Wai Phyo (System Architect / Web Developer)
+
+## Project Methodology
+- Followed Agile with two 4-week sprints
+- Weekly standups, sprint planning, retrospectives
+- Collaborative use of Figma, Discord, and in-person meetings
+
+## Future Work
+- Add machine timetable functionality
+- Improve error handling and UI responsiveness
+- Expand automation for supply ordering
+- Enhance testing and validation across user roles
+
+## License
+© 2023 Team JustInTime. All rights reserved.
